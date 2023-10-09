@@ -5,10 +5,14 @@ from enum import IntEnum
 from math import ceil
 from pathlib import Path
 from struct import Struct
+from warnings import warn
 
 from fsutilz import MMap
 from ProbSetAbs.backends import Bloom2Backend, PyProbablesBloomBackend, PyProbablesCuckooBackend
 from ProbSetAbs.core import IBackend, getBackendByData
+
+warn("We have moved from M$ GitHub to https://codeberg.org/KOLANICH-tools/DilatedHash.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
+
 
 q = Struct("<Q")
 
